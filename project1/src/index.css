@@ -11,29 +11,109 @@ html, body {
 } 
 
 .parent{
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: black;
   padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card{
   height: 300px;
   width: 300px;
   background-color: white;
   border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+.card .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+.top img{
+  height:50px;
+  width:50px; 
+  object-fit: cover;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+.top button{
+  display: flex;
+  align-items: center;
+  border: 2px solid #dadada;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 18px;
+  gap: 5px;
+  background-color: transparent;
+  color: black;
 }
 
-.card img{
-  margin: 20px 15px 5px 30px;
-  height:50px;
-  width:50px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-.card top{
+
+.center{
   display: flex;
-  align-items:center;
-  justify-content:flex-start;
-  padding: 0px 20px;
+  flex-direction: column;
+  gap: 7px;
+} 
+.center h3{
+  font-size: 20px;
+  font-weight: 500;
 }
+.center h3 span{
+  font-size: 15px;
+  font-weight: 400;
+  color: #dadada;
+}
+.center h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+.skills{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skills h4{
+  font-size: 15px;
+  font-weight: 400;
+  color: black ;
+  border: 1px solid #dadada;
+  border-radius: 10px;
+  padding: 3px 5px;
+  background-color: #dadada;
+} 
+.bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top : 1px solid black;
+  padding: 10px ;
+
+}
+.bottom button{
+  border: 2px solid black ;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+}
+.bottom h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: black ;
+}
+.bottom p{
+  font-size: 10px;
+  font-weight: 400;
+  color: #797070;
+}
+
+
 
